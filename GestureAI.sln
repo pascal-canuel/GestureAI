@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "GestureAI", "GestureAI\GestureAI.pyproj", "{A7B5F518-62A6-4F09-AA4D-7AAD42778D96}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A7B5F518-62A6-4F09-AA4D-7AAD42778D96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B5F518-62A6-4F09-AA4D-7AAD42778D96}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FBD0F5FD-2670-4A70-8D1F-0943E1B41C17}
+	EndGlobalSection
+EndGlobal
