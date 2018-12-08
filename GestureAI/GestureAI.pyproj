@@ -4,14 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>a7b5f518-62a6-4f09-aa4d-7aad42778d96</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>GestureAI.py</StartupFile>
+    <StartupFile>Predict.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>GestureAI</Name>
     <RootNamespace>GestureAI</RootNamespace>
-    <InterpreterId>Global|PythonCore|3.6</InterpreterId>
+    <InterpreterId>CondaEnv|CondaEnv|tf-gpu</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,9 +23,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="GestureAI.py" />
+    <Compile Include="Predict.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="Global|PythonCore|3.6" />
+    <InterpreterReference Include="CondaEnv|CondaEnv|tf-gpu" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

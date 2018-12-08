@@ -12,6 +12,8 @@ import keras
 from keras.models import Sequential
 from keras.layers import Dense, Conv2D, MaxPooling2D, Flatten, Dropout
 
+sess = tf.Session(config=tf.ConfigProto(log_device_placement=True))
+
 def plot_history(h):
     plt.plot(history.history['acc'])
     plt.plot(history.history['val_acc'])
@@ -77,10 +79,12 @@ model = keras.Sequential([
 model.compile(loss = keras.losses.categorical_crossentropy, optimizer=keras.optimizers.Adam(),
               metrics=['accuracy'])
 
-history = model.fit(Trainimages, Trainlabels, validation_data = (Validationimages, Validationlabels), epochs=50, batch_size=128)
+#history = model.fit(Trainimages, Trainlabels, validation_data = (Validationimages, Validationlabels), epochs=50, batch_size=128)
 
 # save weights
 model.save_weights("weights.h5")
+
+model.load_weights("weights.h5")
 
 # plot graph
 plot_history(history)
